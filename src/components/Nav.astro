@@ -1,0 +1,17 @@
+---
+import MobileNav from "./Nav/Mobile.astro";
+import DesktopNav from "./Nav/Desktop.astro";
+---
+
+<header>
+  <nav class="fixed top-0 left-0 z-20 w-full bg-black text-red-500 text-xl">
+    <DesktopNav />
+    <MobileNav />
+  </nav>
+</header>
+
+<style>
+  #nav-mobile li {
+    width: 100%;
+  }
+</style>

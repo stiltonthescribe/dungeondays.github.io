@@ -1,0 +1,42 @@
+---
+import Layout from "@components/Layout.astro";
+import Page from "@components/Page.astro";
+import Title from "@components/Title.astro";
+import { Image } from "astro:assets";
+import localImage from "../images/character-skeleton.png";
+---
+
+<Layout title="Characters">
+  <main>
+    <Page>
+      <Title text="Stilton" />
+      <Image src={localImage} alt="stilton illustration" />
+      <div class="flex flex-col md:items-center">
+        <p class="md:w-3/5">
+          Every year in the month of May<br />
+          the Dungeon holds a sporting day<br />
+          206 events for fun<br />
+          and Skeleton Bob&rsquo;s in everyone.<br />
+        </p>
+        <p class="md:w-3/5">
+          The track is lined with his fingers and toes<br />
+          his ribs are used as archery bows<br />
+          the discus is his pelvis bone<br />
+          in the Javelin his spine is thrown<br />
+        </p>
+        <p class="md:w-3/5">
+          the fencing swords come from his thigh<br />
+          over his femur high-jumpers fly<br />
+          his skull is tossed, and kicked, and twirled<br />
+          the most useful remains in the whole wide world.<br />
+        </p>
+        <p class="md:w-3/5">
+          But once the final whistle&rsquo;s blown<br />
+          and the creatures start to head off home<br />
+          there still is left one vital job<br />
+          to collect the pieces and rebuild poor Bob.
+        </p>
+      </div>
+    </Page>
+  </main>
+</Layout>

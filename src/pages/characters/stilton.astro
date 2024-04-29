@@ -1,0 +1,37 @@
+---
+import Layout from "@components/Layout.astro";
+import Title from "@components/Title.astro";
+import Page from "@components/Page.astro";
+import { Image } from "astro:assets";
+import localImage from "../images/character-stilton.png";
+---
+
+<Layout title="Characters">
+  <main>
+    <Page>
+      <Title text="Stilton" />
+      <Image src={localImage} alt="skeleton illustration" />
+      <p>
+        Stilton is the main character in Dungeon Days. He is a young gnome who
+        recently started a job as the Scribe for a local dungeon. It is
+        Stilton&rsquo;s responsibility to record, for prosperity, the stories of
+        the creatures he works with. Stilton is a kind hearted, inquisitive but
+        anxious creature. He enjoys writing and drawing, he loves dragons but
+        hates bats. Stilton is keen to meet another “special” gnome - someone
+        with whom he can share his love of tea, biscuits and interior design
+        with.
+      </p>
+      <p>
+        Each day Stilton walks to work. He passes through streets and market
+        places until he reaches the Castle, below which lies the Dungeon. After
+        passing through the giant gates and trotting down a series of spiral
+        staircases, he arrives at the place he is tasked with writing about. He
+        winds his way through dark tunnels passing rooms filled with books;
+        magical laboratories; cleaning cup- boards; dangerous traps; meeting and
+        office spaces; and a canteen, all the while politely greeting his
+        colleagues until he reaches the little office-cave. The stories in
+        Dungeon Days are written from Stiltons perspective.
+      </p>
+    </Page>
+  </main>
+</Layout>

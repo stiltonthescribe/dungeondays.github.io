@@ -1,0 +1,55 @@
+---
+import Layout from "@components/Layout.astro";
+import Page from "@components/Page.astro";
+import Title from "@components/Title.astro";
+import { Image } from "astro:assets";
+import premiseImage from "./images/origin-premise.png";
+import originIntro from "./images/origin-intro.png";
+import originGoblins from "./images/origin-goblins.png";
+---
+
+<Layout title="Origin">
+  <main>
+    <Page>
+      <Title text="The origin of Dungeon Days" />
+      <section>
+        <h2>Premise</h2>
+        <Image src={premiseImage} alt="image of ideas going into cauldron" />
+        <p>
+          An illustrated collection of poems telling the story of fantasy
+          characters from a humorous, familiar perspective for kids aged 6 to 9.
+          These stories let us peek behind the “curtain” and discover what these
+          magic and scary creatures do when there are no heroes to fight or epic
+          battles to win. Born in the mind of Ted when he had a boring job in
+          local government; Dungeon Days is influenced by the legacy of family,
+          fantasy stories, games like D&D and Roald Dahl&rsquo;s Revolting
+          Rhymes.
+        </p>
+      </section>
+      <section>
+        <h2>Inspiration</h2>
+        <Image
+          src={originIntro}
+          alt="image of poems painted on placards and hung in local woods"
+        />
+        <p>
+          During COVID Ted hung poems in the woods in Bristol. This was an
+          opportunity to share the stories with the world during a difficult
+          time. This led to Ted being featured on BBC Bristol.
+        </p>
+      </section>
+      <section>
+        <h2>Genesis</h2>
+        <Image
+          src={originGoblins}
+          alt="illustration of three goblins, a minotaur and a gnome"
+        />
+        <p>
+          Ted wrote the Dungeon Days stories during lockdown. Friend and
+          illustrator Marcus was inspired to create images for each of them. Ted
+          then approached designer Ollie about creating a book.
+        </p>
+      </section>
+    </Page>
+  </main>
+</Layout>

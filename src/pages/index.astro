@@ -1,0 +1,29 @@
+---
+import Layout from "@components/Layout.astro";
+import Page from "@components/Page.astro";
+import { Image } from "astro:assets";
+import localImage from "./splash-goblins.png";
+---
+
+<Layout title="About">
+  <main>
+    <Image src={localImage} alt="image of three goblins" />
+    <div class="text-center">
+      <h1 class="text-red-500 text-5xl font-bold mb-10">Dungeon Days</h1>
+      <p class="text-slate-200 mb-10">
+        A children&rsquo;s book written by Ted Sherman, illustrated by Marcus
+        Kielly, designed by Ollie Francis
+      </p>
+
+      <a
+        class="text-slate-200 text-xl bg-red-800 px-5 py-2 border-solid border-red-500 border-2 rounded-md"
+        href="/origin">Find out more</a
+      >
+      <a
+        class="text-red-500 text-xl border-solid border-red-500 border-2 px-5 py-2 rounded-md"
+        href="/pdf/dungeon-days-deck-v1.1.pdf"
+        target="_blank">Download PDF pack</a
+      >
+    </div>
+  </main>
+</Layout>

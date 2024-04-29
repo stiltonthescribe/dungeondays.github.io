@@ -1,0 +1,25 @@
+---
+import Layout from "@components/Layout.astro";
+import Title from "@components/Title.astro";
+import Page from "@components/Page.astro";
+import { Image } from "astro:assets";
+import localImage from "../images/character-ogre.png";
+---
+
+<Layout title="Characters">
+  <main>
+    <Page>
+      <Title text="Ogre" />
+      <Image src={localImage} alt="ogre illustration" />
+      <section>
+        This morning I met an awesome gal and now she is my ogre pal! A giant
+        lass of seven feet built of bone and muscled meat But beneath her
+        leathered hide she has a softness deep inside And I know that this may
+        sound barmy, but this ogre loves origami. Her hands, the size of double
+        beds are perfect tools for smashing heads. But once she&rsquo;s through
+        with squashing men she finds a quiet cave and then her hands will fold
+        and fold for hours making tiny paper flowers.
+      </section>
+    </Page>
+  </main>
+</Layout>

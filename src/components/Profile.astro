@@ -1,0 +1,21 @@
+---
+const { image, title, subTitle } = Astro.props;
+---
+
+<section
+  class="mb-10 flex flex-col md:flex-row sm:items-center sm:justify-between"
+>
+  <div class="md:w-2/5 flex justify-center md:justify-start md:items-start">
+    <img
+      src={image}
+      class="mt-0 rounded-md border-solid border-2 border-white w-4/5 aspect-square z-10"
+    />
+  </div>
+  <div class="md:w-3/5 pb-5">
+    <article class="prose lg:prose-xl">
+      <h3 class="text-center md:text-left mt-0">{title}</h3>
+      <strong class="text-center md:text-left">{subTitle}</strong>
+      <slot name="profile-text" />
+    </article>
+  </div>
+</section>

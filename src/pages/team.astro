@@ -1,0 +1,49 @@
+---
+import Layout from "@components/Layout.astro";
+import Page from "@components/Page.astro";
+import Profile from "@components/Profile.astro";
+import Title from "@components/Title.astro";
+---
+
+<Layout title="Team">
+  <main>
+    <Page>
+      <Title text="The Dungeon Days team" />
+      <Profile
+        image="/images/profile-ted.jpg"
+        title="Ted Sherman"
+        subTitle="Poet & Storyteller"
+      >
+        <p slot="profile-text">
+          Ted&rsquo;s passion is music, poetry and storytelling, he is the
+          creator of Dungeon Days. He works by day as a Public Health
+          commisioner and programme manager, which has influenced the world we
+          are creating.
+        </p>
+      </Profile>
+      <Profile
+        image="/images/profile-marcus.jpg"
+        title="Marcus Kielly"
+        subTitle="Illustrator"
+      >
+        <p slot="profile-text">
+          Marcus has over 35 years of illustration experience, working on
+          character development and sweating every detail of the visuals for the
+          dungeon. He is a software engineer by day, running distributed
+          international teams.
+        </p>
+      </Profile>
+      <Profile
+        image="/images/profile-ollie.jpg"
+        title="Ollie Francis"
+        subTitle="Designer"
+      >
+        <p slot="profile-text">
+          Ollie has worked as print and digital designer for over 25 years - he
+          loves creating functional and beautiful experiences. He runs his own
+          digital consultancy working with brands-for-good.
+        </p>
+      </Profile>
+    </Page>
+  </main>
+</Layout>
