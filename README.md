@@ -41,7 +41,7 @@ The basic syntax is {target}-{color} i.e
 ### Typography
 
 I've also added the Tailwind Prose plugin that has a bunch of sensible defaults, but you might need to override some of them.
-Most of this is applied in the `src/components/page.astro` file.  
+Most of this is applied in the `src/components/Typography.astro` file which wraps each of the pages.  
 Here's some docs on how to target specific elements: https://github.com/tailwindlabs/tailwindcss-typography?tab=readme-ov-file#element-modifiers
 
 ## Building
