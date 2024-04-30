@@ -1,14 +1,14 @@
 ---
 import Layout from "@components/Layout.astro";
 import Title from "@components/Title.astro";
-import Page from "@components/Page.astro";
+import Typography from "@components/Typography.astro";
 import { Image } from "astro:assets";
-import localImage from "../images/character-minotaur.png";
+import localImage from "../../images/character-minotaur.png";
 ---
 
 <Layout title="Characters">
   <main>
-    <Page>
+    <Typography>
       <Title text="Minotaur" />
 
       <Image class="mx-auto" src={localImage} alt="minotaur illustration" />
@@ -55,6 +55,6 @@ import localImage from "../images/character-minotaur.png";
         My lunch, once more, I will adore I&rsquo;ll eat it in my cave<br />
         never to see that minotaur I&rsquo;d sooner be full than brave.
       </p>
-    </Page>
+    </Typography>
   </main>
 </Layout>

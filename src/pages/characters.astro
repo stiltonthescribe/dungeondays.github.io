@@ -1,28 +1,28 @@
 ---
 import Layout from "@components/Layout.astro";
-import Page from "@components/Page.astro";
+import Typography from "@components/Typography.astro";
 import Title from "@components/Title.astro";
+import Button from "@components/Button.astro";
 ---
 
 <Layout title="Characters">
   <main>
-    <Title text="Characters" />
-    <Page>
-      <section>
-        Here are a few of the characters from the dungeon days book
-      </section>
-      <section>
-        <a href="/characters/stilton"><h2>Stilton</h2></a>
-      </section>
-      <section>
-        <a href="/characters/minotaur"><h2>The Minotaur</h2></a>
-      </section>
-      <section>
-        <a href="/characters/skeleton"><h2>The Skeleton</h2></a>
-      </section>
-      <section>
-        <a href="/characters/ogre"><h2>The Ogre</h2></a>
-      </section>
-    </Page>
+    <Typography>
+      <div class="flex flex-col items-center">
+        <Title text="Characters" />
+        <p>Here are a few of the characters from the dungeon days book</p>
+        <div>
+          <Button href="/characters/stilton"> Stilton </Button>
+        </div>
+        <div>
+          <Button href="/characters/minotaur">The Minotaur</Button>
+        </div>
+        <div>
+          <Button href="/characters/skeleton">The Skeleton</Button>
+        </div><div>
+          <Button href="/characters/ogre">The Ogre</Button>
+        </div>
+      </div>
+    </Typography>
   </main>
 </Layout>

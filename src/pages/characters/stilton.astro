@@ -1,15 +1,16 @@
 ---
 import Layout from "@components/Layout.astro";
 import Title from "@components/Title.astro";
-import Page from "@components/Page.astro";
+import Page from "@components/Typography.astro";
 import { Image } from "astro:assets";
-import localImage from "../images/character-stilton.png";
+import localImage from "../../images/character-stilton.png";
 ---
 
 <Layout title="Characters">
   <main>
     <Page>
-      <Title text="Stilton" />
+      <Title text="Stilton the Scribe" />
+      <h2 class="text-center">The Dungeon Days narrator</h2>
       <Image src={localImage} alt="skeleton illustration" />
       <p>
         Stilton is the main character in Dungeon Days. He is a young gnome who

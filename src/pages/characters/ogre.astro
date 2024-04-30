@@ -1,14 +1,14 @@
 ---
 import Layout from "@components/Layout.astro";
 import Title from "@components/Title.astro";
-import Page from "@components/Page.astro";
+import Typography from "@components/Typography.astro";
 import { Image } from "astro:assets";
-import localImage from "../images/character-ogre.png";
+import localImage from "../../images/character-ogre.png";
 ---
 
 <Layout title="Characters">
   <main>
-    <Page>
+    <Typography>
       <Title text="Ogre" />
       <Image src={localImage} alt="ogre illustration" />
       <section>
@@ -20,6 +20,6 @@ import localImage from "../images/character-ogre.png";
         with squashing men she finds a quiet cave and then her hands will fold
         and fold for hours making tiny paper flowers.
       </section>
-    </Page>
+    </Typography>
   </main>
 </Layout>

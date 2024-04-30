@@ -1,14 +1,14 @@
 ---
 import Layout from "@components/Layout.astro";
-import Page from "@components/Page.astro";
+import Typography from "@components/Typography.astro";
 import Title from "@components/Title.astro";
 import { Image } from "astro:assets";
-import localImage from "../images/character-skeleton.png";
+import localImage from "../../images/character-skeleton.png";
 ---
 
 <Layout title="Characters">
   <main>
-    <Page>
+    <Typography>
       <Title text="Stilton" />
       <Image src={localImage} alt="stilton illustration" />
       <div class="flex flex-col md:items-center">
@@ -37,6 +37,6 @@ import localImage from "../images/character-skeleton.png";
           to collect the pieces and rebuild poor Bob.
         </p>
       </div>
-    </Page>
+    </Typography>
   </main>
 </Layout>

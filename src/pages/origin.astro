@@ -1,16 +1,16 @@
 ---
 import Layout from "@components/Layout.astro";
-import Page from "@components/Page.astro";
+import Typography from "@components/Typography.astro";
 import Title from "@components/Title.astro";
 import { Image } from "astro:assets";
-import premiseImage from "./images/origin-premise.png";
-import originIntro from "./images/origin-intro.png";
-import originGoblins from "./images/origin-goblins.png";
+import premiseImage from "../images/origin-premise.png";
+import originIntro from "../images/origin-intro.png";
+import originGoblins from "../images/origin-goblins.png";
 ---
 
 <Layout title="Origin">
   <main>
-    <Page>
+    <Typography>
       <Title text="The origin of Dungeon Days" />
       <section>
         <h2>Premise</h2>
@@ -50,6 +50,6 @@ import originGoblins from "./images/origin-goblins.png";
           then approached designer Ollie about creating a book.
         </p>
       </section>
-    </Page>
+    </Typography>
   </main>
 </Layout>
